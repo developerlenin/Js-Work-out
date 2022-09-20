@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Addtion, Substraction, Divide &amp; Multiplication using javaScript!</title>
+	<script>
+	 function cal(){
+	     var input1=document.getElementById("value1").value;
+		 var input2=document.getElementById("value2").value;
+		 var opt=document.getElementById("option").value;
+		 var answer= eval(input1 + opt + input2);
+				document.getElementById("ans").value=answer;
+		 
+		 	 if (opt=="+") {			 
+				var answer= eval(input1 + opt + input2);
+				document.getElementById("ans").value=answer;
+			}
+			else if (opt=="*"){
+			var answer= eval(input1 + opt + input2);
+				document.getElementById("ans").value=answer;
+			}
+			else if  (opt=="-"){
+			var answer= eval(input1 + opt + input2);
+				document.getElementById("ans").value=answer;
+			}
+	 };
+</script>
+</head>
+<body>
+	  <input type="text" id="value1" />
+	  <input type="text" id="value2" />
+	   <select id="option">option
+	     <option>*</option>
+	     <option>-</option>
+	     <option>+</option>
+	   </select>
+	  
+	  <button id="submit"onclick= cal();>save</button>
+	  <input type="text" id="ans" />
+	  <!-- // -->
+	  <!-- <input type="number" id="lenin"> -->
+	  <!-- <button id="btnn" onclick= word();>save</button> -->
+	  <!-- <p id="para"></p> -->
+	  
+	  <script>
+	     function word(){
+		    var x = document.getElementById("lenin").value;
+			var p = document.getElementById("para");
+			var e ;
+			if (x<10){
+			switch(parseInt(x)){
+			case 1:
+			p.appendChild(document.createTextNode("one"));
+             break;
+			case 2:
+			p.appendChild(document.createTextNode("two"));
+			break;
+			case 3:
+			p.appendChild(document.createTextNode("three"));
+			break;
+			
+			default:
+			p.innerHTML=true;
+			}
+			}
+			else 
+			
+		 }
+	  </script> 
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
